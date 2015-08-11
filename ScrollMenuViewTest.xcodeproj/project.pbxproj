@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172F911AC9D2F480CAAEB7E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D1D70D857D1CE94461ED5D /* libPods.a */; };
 		E54643231B78BEB6008E743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54643221B78BEB6008E743A /* AppDelegate.swift */; };
 		E54643251B78BEB6008E743A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54643241B78BEB6008E743A /* ViewController.swift */; };
 		E54643281B78BEB6008E743A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54643261B78BEB6008E743A /* Main.storyboard */; };
 		E546432A1B78BEB6008E743A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54643291B78BEB6008E743A /* Images.xcassets */; };
 		E546432D1B78BEB6008E743A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E546432B1B78BEB6008E743A /* LaunchScreen.xib */; };
 		E54643391B78BEB6008E743A /* ScrollMenuViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54643381B78BEB6008E743A /* ScrollMenuViewTestTests.swift */; };
+		E5E10A061B79971200062578 /* JWSegmentMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E10A051B79971200062578 /* JWSegmentMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EFFFC21A7E64D23273E05A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		96D1D70D857D1CE94461ED5D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDB8435F12E1ED20ECA9B5B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E546431D1B78BEB6008E743A /* ScrollMenuViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollMenuViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54643211B78BEB6008E743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54643221B78BEB6008E743A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,8 @@
 		E54643321B78BEB6008E743A /* ScrollMenuViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollMenuViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54643371B78BEB6008E743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E54643381B78BEB6008E743A /* ScrollMenuViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMenuViewTestTests.swift; sourceTree = "<group>"; };
+		E5E10A011B79951900062578 /* ScrollMenuViewTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollMenuViewTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5E10A051B79971200062578 /* JWSegmentMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSegmentMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172F911AC9D2F480CAAEB7E1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A8BD643CB73E03AFDA5346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDB8435F12E1ED20ECA9B5B2 /* Pods.debug.xcconfig */,
+				6EFFFC21A7E64D23273E05A0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		910D13FEF02D859F17A5F97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D1D70D857D1CE94461ED5D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E54643141B78BEB5008E743A = {
 			isa = PBXGroup;
 			children = (
 				E546431F1B78BEB6008E743A /* ScrollMenuViewTest */,
 				E54643351B78BEB6008E743A /* ScrollMenuViewTestTests */,
 				E546431E1B78BEB6008E743A /* Products */,
+				23A8BD643CB73E03AFDA5346 /* Pods */,
+				910D13FEF02D859F17A5F97E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +106,11 @@
 			children = (
 				E54643221B78BEB6008E743A /* AppDelegate.swift */,
 				E54643241B78BEB6008E743A /* ViewController.swift */,
+				E5E10A051B79971200062578 /* JWSegmentMenuView.swift */,
 				E54643261B78BEB6008E743A /* Main.storyboard */,
 				E54643291B78BEB6008E743A /* Images.xcassets */,
 				E546432B1B78BEB6008E743A /* LaunchScreen.xib */,
+				E5E10A011B79951900062578 /* ScrollMenuViewTest-Bridging-Header.h */,
 				E54643201B78BEB6008E743A /* Supporting Files */,
 			);
 			path = ScrollMenuViewTest;
@@ -119,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E546433C1B78BEB6008E743A /* Build configuration list for PBXNativeTarget "ScrollMenuViewTest" */;
 			buildPhases = (
+				0A76A2162D68431BCC757BE3 /* Check Pods Manifest.lock */,
 				E54643191B78BEB6008E743A /* Sources */,
 				E546431A1B78BEB6008E743A /* Frameworks */,
 				E546431B1B78BEB6008E743A /* Resources */,
+				6D78398D1EA218E14EB2762B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +192,7 @@
 				TargetAttributes = {
 					E546431C1B78BEB6008E743A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6Y6PJDEC8X;
 					};
 					E54643311B78BEB6008E743A = {
 						CreatedOnToolsVersion = 6.4;
@@ -207,12 +239,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A76A2162D68431BCC757BE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D78398D1EA218E14EB2762B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E54643191B78BEB6008E743A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E54643251B78BEB6008E743A /* ViewController.swift in Sources */,
+				E5E10A061B79971200062578 /* JWSegmentMenuView.swift in Sources */,
 				E54643231B78BEB6008E743A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,21 +404,32 @@
 		};
 		E546433D1B78BEB6008E743A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB8435F12E1ED20ECA9B5B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScrollMenuViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrollMenuViewTest/ScrollMenuViewTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E546433E1B78BEB6008E743A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFFFC21A7E64D23273E05A0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ScrollMenuViewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrollMenuViewTest/ScrollMenuViewTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +486,7 @@
 				E546433E1B78BEB6008E743A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E546433F1B78BEB6008E743A /* Build configuration list for PBXNativeTarget "ScrollMenuViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				E54643411B78BEB6008E743A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
